@@ -11,7 +11,7 @@ const Data = () => {
 
             <a href="#contact" className="button button--flex">
                 Contact Me 
-                <i className="uil uil-message"></i>
+                <i className="uil uil-message home__contact"></i>
             </a>
         </div>
     )
