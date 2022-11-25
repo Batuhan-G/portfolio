@@ -63,3 +63,57 @@
     transform: translateX(0.25rem);
 }
 
+/*active work*/
+.active-portfolio {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+
+/* BREAKPOINTS */
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .portfolio__container {
+        gap: 1.25rem;
+    }
+
+    .portfolio__card {
+        padding: 1rem;
+    }
+
+    .portfolio__img{
+        margin-bottom: 0.75rem;
+    }
+
+    .portfolio__title {
+        margin-bottom: 0.25rem;
+    }
+   }
+
+    /* For medium devices */
+  @media screen and (max-width: 768px) {
+   .portfolio__container {
+    grid-template-columns: max-content;
+   }
+  }
+
+  @media screen and (max-width: 576px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__img {
+        width: 100%;
+    }
+  }
+
+   /* For small devices */
+   @media screen and (max-width: 350px) {
+   .portfolio__item {
+    font-size: var(--small-font-size);
+   }
+
+   .portfolio__filters {
+    column-gap: 0.25rem;
+   }
+  }

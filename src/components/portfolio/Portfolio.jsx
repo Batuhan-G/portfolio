@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <section className='portfolio section' id='work'>
         <h2 className="section__title">Portfolio</h2>
-<span className="section__subtitle">Most recent works</span>
+<span className="section__subtitle">Featured works</span>
         <Works />
     </section>
   )
