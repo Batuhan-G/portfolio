@@ -20,12 +20,12 @@ const Contact = () => {
 
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+            <h2 className="section__title">Contact Me</h2>
+            <span className="section__subtitle">Get in touch</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
+                    <h3 className="contact__title">Reach to me</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -34,7 +34,13 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">batuhangoren99@hotmail.com</span>
 
-                            <a href="mailto:batuhangoren99@hotmail.com" className="contact__button">Write me
+                            <a
+                                href="mailto:batuhangoren99@hotmail.com"
+                                className="contact__button"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
@@ -48,6 +54,8 @@ const Contact = () => {
                                 href="https://api.whatsapp.com/send?phone=905342354567&text=
                                  Hi, I'd like to meet you for a job offer."
                                 className="contact__button"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 Call me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -59,7 +67,13 @@ const Contact = () => {
                             <h3 className="contact__card-title">Location</h3>
                             <span className="contact__card-data">İzmir/Turkey</span>
 
-                            <a href="https://l24.im/tvCze" className="contact__button">Show location
+                            <a
+                                href="https://l24.im/tvCze"
+                                className="contact__button"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Show location
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
