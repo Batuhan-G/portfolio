@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css"
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'service_7vey69c',
+                'template_yevhokv',
+                form.current,
+                'xjyzowm4Lg_e2HtQp'
+            )
+        e.target.reset()
+    };
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch</h2>
@@ -25,20 +41,25 @@ const Contact = () => {
 
                         <div className="contact__card">
                             <i className='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 className="contact__card-title">Call Me</h3>
+                            <h3 className="contact__card-title">Phone</h3>
                             <span className="contact__card-data">+90 534 235 45 67</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=5342354567&text=Hello, more information!" className="contact__button">Write me
+                            <a
+                                href="https://api.whatsapp.com/send?phone=905342354567&text=
+                                 Hi, I'd like to meet you for a job offer."
+                                className="contact__button"
+                            >
+                                Call me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
 
                         <div className="contact__card">
-                            <i className="uil uil-map-marker"></i>
+                            <i className="uil uil-map-marker contact__card-icon"></i>
                             <h3 className="contact__card-title">Location</h3>
                             <span className="contact__card-data">İzmir/Turkey</span>
 
-                            <a href="https://l24.im/tvCze" className="contact__button">Write me
+                            <a href="https://l24.im/tvCze" className="contact__button">Show location
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
@@ -48,7 +69,7 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your message</h3>
 
-                    <form className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input

@@ -7,6 +7,7 @@ const WorkItems = ({ item }) => {
             <h3 className="portfolio__title">{item.title}</h3>
             <a
                 href={item.path}
+                rel="noreferrer"
                 target="_blank"
                 className="portfolio__button">
                 Review <i className="bx bx-right-arrow-alt portfolio__button-icon"></i>
