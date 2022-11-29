@@ -37,6 +37,11 @@
     display: inline-flex;
 }
 
+/*From header.jsx */
+.dark-theme .footer__social-link {
+    color: var(--text-color);
+}
+
 .footer__social-link:hover {
     background-color: var(--title-color-dark);
 }
