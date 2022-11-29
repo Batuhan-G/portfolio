@@ -13,6 +13,7 @@
     font-weight: var(--font-medium);
     color: var(--title-color);
     margin: 0 var(--mb-1);
+    padding: 0 0.5rem;
     cursor: pointer;
 }
 
@@ -27,7 +28,11 @@
 
 .qualification__active {
     color: var(--title-color-dark);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
+
+
 
 .qualification__sections {
     display: grid;
