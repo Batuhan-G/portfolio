@@ -29,6 +29,14 @@ const OtherTools = () => {
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
+                    <div className="skills_data">
+                        <i className='bx bx-badge-check' ></i>
+                        <div>
+                            <h3 className='skills__name'>Figma</h3>
+                            <span className="skills__level">Basic</span>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div className="skills__group">
@@ -52,6 +60,13 @@ const OtherTools = () => {
                         <div>
                             <h3 className='skills__name'>Jira</h3>
                             <span className="skills__level">Advance</span>
+                        </div>
+                    </div>
+                    <div className="skills_data">
+                        <i className='bx bx-badge-check' ></i>
+                        <div>
+                            <h3 className='skills__name'>Sass</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>
