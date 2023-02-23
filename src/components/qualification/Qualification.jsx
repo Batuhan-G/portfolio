@@ -66,7 +66,7 @@ const Qualification = () => {
                                     Rapsodo - İzmir
                                 </span>
                                 <div className="qualification__calender">
-                                    <i className='uil uil-calendar-alt'></i>2021 - 2021
+                                    <i className='uil uil-calendar-alt'></i>06.2021 - 09.2021
                                 </div>
                             </div>
 

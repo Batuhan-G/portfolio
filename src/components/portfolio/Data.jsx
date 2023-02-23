@@ -1,5 +1,5 @@
 import TodoApp from '../../assets/toDoApp.png'
-import KitchenMenuApp from '../../assets/kitchenMenuApp.png'
+import ECommerce from '../../assets/e-commerce.png'
 import ChatApp from '../../assets/chatApp.png'
 import ApartopolisApp from '../../assets/apartopolisApp.jpg'
 
@@ -20,10 +20,10 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: KitchenMenuApp,
-    title: "Kitchen Menu App",
-    category: "design",
-    path: "https://github.com/Batuhan-G/Asian-Kitchen-s-Menu"
+    image: ECommerce,
+    title: "E-Commerce",
+    category: "web",
+    path: "https://github.com/Batuhan-G/e-commerce"
   },
   {
     id: 4,
